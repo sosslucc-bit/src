@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Radio Vibra</title>
+  <meta name="description" content="Formulario accesible de contacto.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <!-- Poner nombre de proyecto -->
+      <a class="brand" href="index.html">Radio vibra</a>
+      <nav class="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <!-- Agregar a continuación el elemento Proyecto -->
+          <li><a href="proyecto.html">Proyecto</a></li>
+          <li><a href="contacto.html"aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section  class="form-layout">
+          <div class="contact-form">
+          <h1>Contacto</h1>
+          <div class="wrap-form">
+          <form class="form" aria-describedby="ayuda-form" id="contactForm">
+            <p id="ayuda-form">Los campos marcados con <span aria-hidden="true">*</span> son obligatorios.</p>
+
+            <div class="form-control">
+              <label for="nombre">Nombre <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Correo <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+
+            <div class="form-control">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+ <p id="form-status" aria-live="polite"></p>
+            <button class="button" type="submit" id="submitButton">Enviar</button>
+          </form>
+        </div>
+        </div>
+    </section>
+    <script src="js/form.js" defer></script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="anio">2025</span> Radio Vibras.</p>
+    </div>
+    <section class="links-redes">
+        <div class="redes">
+          <a href="https://www.instagram.com" target="_blank"><img src="assets/instagram (2).png" alt="Instagram"></a>
+          <a href="https://twitter.com/home" target="_blank"><img src="assets/twitter.png" alt="Twitter"></a>
+          <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="assets/facebook (1).png" alt="Facebook"></a>
+          <a href="https://www.tiktok.com/es/" target="_blank"><img src="assets/tik-tok (1).png" alt="TikTok"></a>
+        </div>
+      </section>
+  </footer>
+</body>
+</html>
